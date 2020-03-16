@@ -1,0 +1,15 @@
+[Unit]
+Description=My watchlog service
+
+[Service]
+Type=oneshot
+EnvironmentFile=/etc/sysconfig/watchlog
+ExecStart=/opt/watchlog.sh $WORD $LOG
+
+MemoryLimit=50M
+LimitCPU=29
+LimitNPROC=1
+LimitNICE=-1
+
+SuccessExitStatus=143
+Restart=no
