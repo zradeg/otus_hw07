@@ -100,8 +100,8 @@ WantedBy=multi-user.target
 
 Запускаю юнит:
 ```
-[root@hw07-systemd ~] systemctl start watchlog
-[root@hw07-systemd ~] systemctl enable watchlog
+[root@hw07-systemd ~] systemctl start watchlog.timer
+[root@hw07-systemd ~] systemctl enable watchlog.timer
 ```
 
 Проверяю:
